@@ -37,7 +37,7 @@ This is the repository for the **UA-1330-Java_Fundamentals** group, created for 
 2. Open Command Prompt, Git Bash, or the **terminal** in your IDE (IntelliJ IDEA or Eclipse) 💻
 3. Clone the repository 🔗:
     ```bash
-    git clone https://github.com/OlhenShu/UA-1330.git
+    git clone [https://github.com/OlhenShu/UA-1330.git](https://github.com/UA-1330-Java-Fundamentals/UA-1330.git)
     ```
 4. Navigate to your directory:
     ```bash
