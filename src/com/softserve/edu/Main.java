@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         /* This is a sample class which is used to demonstrate the
          use of multi-line comments. This comment does not appear
-          in the java documentation */
+          in the java documentation. */
         System.out.println("Hello, World!");
         //
         int i = 49;
