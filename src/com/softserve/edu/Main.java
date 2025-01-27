@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Hello, World!");
         //
         int i = 49;
-        System.out.println("i = " + i + " as char = " + (char) i);
+        System.out.println("i = " + i + " as char = " + (char)i);
         //
         // This example demonstrates the use of single line comments
         Main m1 = new Main();
