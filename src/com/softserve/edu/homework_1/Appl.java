@@ -1,4 +1,4 @@
-package com.softserve.edu;
+package com.softserve.edu.homework_1;
 
 public class Appl {
 
