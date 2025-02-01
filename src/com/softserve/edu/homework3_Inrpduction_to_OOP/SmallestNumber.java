@@ -43,7 +43,7 @@ public class SmallestNumber {
         number.setNumber1(scan.nextInt());
         System.out.print("Please, input number 2 : ");
         number.setNumber2(scan.nextInt());
-        System.out.print("Please, input number 3  : ");
+        System.out.print("Please, input number 3 : ");
         number.setNumber3(scan.nextInt());
 
         System.out.println(number.findSmallestNumber());
