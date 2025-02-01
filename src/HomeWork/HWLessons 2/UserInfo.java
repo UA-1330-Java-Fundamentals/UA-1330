@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.io.InputStreamReader;
 public class UserInfo {
     public static void main(String[] arg) {
         Scanner sc = new Scanner(System.in);
@@ -8,6 +7,8 @@ public class UserInfo {
         System.out.print("Where do you live, " + name + "? ");
         String address = sc.nextLine();
         System.out.println("Name: " + name + ", " + "Address: " + address);
+
+        sc.close();
 
     }
 }

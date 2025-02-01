@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.io.InputStreamReader;
 
 public class FlowerBedCalculator {
     public static void main(String[] args) throws Exception {
@@ -13,10 +12,7 @@ public class FlowerBedCalculator {
         double area = Math.PI*radius*radius;
         System.out.println("area = " +  area);
 
-
-
-
-
-
+        sc.close();
     }
 }
+
