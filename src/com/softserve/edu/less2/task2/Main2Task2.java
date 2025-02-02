@@ -1,10 +1,7 @@
 package com.softserve.edu.less2.task2;
 
-import com.softserve.edu.less2.task1.AreaOfTriangle;
-
 import java.util.Scanner;
 
-import static java.lang.Math.sqrt;
 
 /*2. Write Java console application with method to find the smallest number among three integer numbers. Example of*/
 public class Main2Task2 {
