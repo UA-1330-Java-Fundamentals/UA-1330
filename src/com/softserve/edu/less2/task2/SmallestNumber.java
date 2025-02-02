@@ -25,8 +25,8 @@ public class SmallestNumber {
         return secondNumber;
     }
 
-    public void setSecondNumberr(int secondNumberr) {
-        this.secondNumber = secondNumberr;
+    public void setSecondNumber(int secondNumber) {
+        this.secondNumber = secondNumber;
     }
 
     public int getThirdNumber() {

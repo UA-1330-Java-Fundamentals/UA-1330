@@ -12,7 +12,7 @@ public class Main2Task2 {
         int number1 = promptParameters();
         smallestnumber.setFirstNumber(number1);
         int number2 = promptParameters();
-        smallestnumber.setSecondNumberr(number2);
+        smallestnumber.setSecondNumber(number2);
         int number3 = promptParameters();
         smallestnumber.setThirdNumber(number3);
         System.out.println("The smallest number = " + compareNumbers(smallestnumber));
