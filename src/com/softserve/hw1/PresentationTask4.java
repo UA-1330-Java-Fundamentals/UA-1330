@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class PresentationTask4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+// tests
         System.out.print("How are you?");
         String answer = sc.nextLine();
 
