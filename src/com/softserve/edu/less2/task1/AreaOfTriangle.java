@@ -1,4 +1,4 @@
-package com.softserve.edu.less2;
+package com.softserve.edu.less2.task1;
 
 public class AreaOfTriangle {
     private double side1;
