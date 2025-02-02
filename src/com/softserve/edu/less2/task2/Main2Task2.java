@@ -36,8 +36,7 @@ public class Main2Task2 {
 
     public static int promptParameters() {
         System.out.println("Please, enter the int number : ");
-        int number = SCANNER.nextInt();
-        return number;
+        return SCANNER.nextInt();
     }
 
 }
