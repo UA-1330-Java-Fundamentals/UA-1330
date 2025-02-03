@@ -11,9 +11,6 @@ public class Appl {
         System.out.print("Start5");
         System.out.print("Start6");
 
-
-
-
     }
 
 }
