@@ -7,7 +7,7 @@ public class AreaCalculator {
         int firstSide = getSide ("Input side 1: ");
         int secondSide = getSide ("Input side 2: ");
         int thirdSide = getSide ("Input side 3: ");
-        System.out.print("the area of the triangle is %.2f".formatted(getArea(firstSide, secondSide,thirdSide)));
+        System.out.printf("the area of the triangle is %.2f", getArea(firstSide, secondSide,thirdSide));
     }
 
     private static int getSide(String prompt){
