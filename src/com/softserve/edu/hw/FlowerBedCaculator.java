@@ -1,4 +1,4 @@
-package com.softserve.edu.hw01;
+package com.softserve.edu.hw;
 
 public class  FlowerBedCaculator {
     public static void main(String[] args) {
