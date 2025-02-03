@@ -6,6 +6,7 @@ public class Appl {
         System.out.println("Hello, World!");
         System.out.print("Start");
         System.out.print("Start2");
+        System.out.print("Start3");
 
     }
 
