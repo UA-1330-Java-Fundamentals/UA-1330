@@ -18,7 +18,7 @@ public class triangletask {//According to Java Code Conventions class name shoul
         int s3 = sc.nextInt();
 
         double area = triangleArea(s1, s2, s3);
-        System.out.println("Triangle area equals : " + area);
+        System.out.println("Triangle area equals: " + area);
     }
 
     public static double triangleArea(int a, int b, int c) {
