@@ -28,7 +28,7 @@ public class DogAppl {
         }
           else if (d3.getName() == d1.getName()) {
             System.out.println("These two dogs have the same name : " +
-                    d3.getName() + " and " +d1.getName())
+                    d3.getName() + " and " +d1.getName());
         }
           else {
             System.out.println("All dogs have unique names : " + d1.getName() +
