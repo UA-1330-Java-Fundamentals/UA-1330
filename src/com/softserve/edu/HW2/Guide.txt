@@ -1,0 +1,26 @@
+HOMEWORK
+
+1. Write Java console application with method to calculate the area of a triangle. Example of output:
+
+Input Side 1: 10
+
+Input Side 2: 12
+
+Input Side 3: 15
+
+The area of the triangle is 59.81
+
+**I create TriangleFormulas and CalculationsОfGeometricFigures classes where isCalculationsОfGeometricFigures entry point**
+
+
+
+
+2. Write Java console application with method to find the smallest number among three integer numbers. Example of output:
+
+Input the first number: 18
+
+Input the second number:32
+
+Input the third number: 54
+
+The smallest number is 18
