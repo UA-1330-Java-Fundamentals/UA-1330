@@ -1,4 +1,5 @@
 package com.softserve.oop;
+
 import java.time.Year;
 import java.util.Scanner;
 
@@ -30,7 +31,7 @@ public class Person {
     }
 
     public void setBirthYear(int birthYear) {
-        if (birthYear > 1900 && birthYear< 2026){
+        if (birthYear > 1900 && birthYear < 2026) {
             this.birthYear = birthYear;
         }
     }
@@ -45,7 +46,7 @@ public class Person {
 
     public int getAge() {
         int year = Year.now().getValue();
-        return  year - getBirthYear();
+        return year - getBirthYear();
     }
 
     @Override
@@ -57,14 +58,15 @@ public class Person {
                 '}';
     }
 
-    public void input(String prompt1, String prompt2 , String prompt3){
-        Scanner sc = new Scanner(in);
+    public void input(Scanner sc, String prompt1, String prompt2, String prompt3) {
+        //  Scanner sc = new Scanner(in);//Dont create new Scanner object, use existing one
         System.out.print(prompt1);
         setFirstName(sc.nextLine());
         System.out.print(prompt2);
         setLastName(sc.nextLine());
         System.out.print(prompt3);
         setBirthYear(sc.nextInt());
+        sc.nextLine();
     }
 
     public void changeName(String fn, String ln) {
@@ -76,8 +78,6 @@ public class Person {
         System.out.println("Person's  data : " +
                 "firstName='" + getFirstName() + '\'' +
                 ", lastName='" + getLastName() + '\'' +
-                ", birthYear=" + getBirthYear());
+                ", age = '" + getAge() + '\'');
     }
-
-
 }
