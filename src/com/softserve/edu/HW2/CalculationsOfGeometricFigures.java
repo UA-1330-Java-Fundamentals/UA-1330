@@ -2,7 +2,7 @@ package com.softserve.edu.HW2;
 
 import java.util.Scanner;
 
-public class CalculationsОfGeometricFigures {
+public class CalculationsOfGeometricFigures {
 
     public static void main(String[] args) {
 
@@ -10,7 +10,7 @@ public class CalculationsОfGeometricFigures {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Input size of all side of triange");
+        System.out.println("Input size of all side of triange ");
 
         s1 = sc.nextDouble();
         s2 = sc.nextDouble();
