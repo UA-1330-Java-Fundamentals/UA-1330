@@ -15,6 +15,7 @@ public class CalculationsОfGeometricFigures {
         s1 = sc.nextDouble();
         s2 = sc.nextDouble();
         s3 = sc.nextDouble();
+
         sc.close();
 
         TriangleFormulas tf = new TriangleFormulas(s1,s2,s3);
