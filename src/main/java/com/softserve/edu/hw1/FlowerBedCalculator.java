@@ -12,5 +12,6 @@ public class FlowerBedCalculator {
         String areaResultMessage = String.format("The area of your flower bed is: %.2f", area);
         System.out.println(perimeterResultMessage);
         System.out.println(areaResultMessage);
+        scanner.close();
     }
 }
