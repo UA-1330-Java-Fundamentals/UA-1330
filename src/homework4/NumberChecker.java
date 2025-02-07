@@ -1,7 +1,10 @@
 package homework4;
 
 /*
-Write a method that checks if a given number falls within a specified range and determines if the number is even or odd. The method should take three integers as inputs: the number to be checked, the lower bound of the range, and the upper bound of the range. The method should return a string message indicating whether the number is within the range and whether it is even or odd. If the number is not within the range, the method should return an appropriate error message.
+Write a method that checks if a given number falls within a specified range and determines if the number is even or odd.
+ The method should take three integers as inputs: the number to be checked, the lower bound of the range, and the upper
+ bound of the range. The method should return a string message indicating whether the number is within the range
+ and whether it is even or odd. If the number is not within the range, the method should return an appropriate error message.
 
 Requirements:
 Create a method named checkNumberInRangeAndParity.
