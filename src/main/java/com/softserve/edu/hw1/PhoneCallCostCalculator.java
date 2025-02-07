@@ -28,6 +28,6 @@ public class PhoneCallCostCalculator {
         System.out.printf("Cost of the 2nd call: %.2f\n", cost2);
         System.out.printf("Cost of the 3rd call: %.2f\n", cost3);
         System.out.printf("Total cost of all calls: %.2f\n", totalCost);
-
+        sc.close();
     }
 }
