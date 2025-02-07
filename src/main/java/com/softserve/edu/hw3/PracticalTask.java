@@ -6,11 +6,14 @@ public class PracticalTask {
         double num1 = getNumber("Enter the first number: ");
         double num2 = getNumber("Enter the second number: ");
         double total = getTotal(num1, num2);
-        System.out.println("The total sum of the 2 numbers is: " + total);
+        System.out.println("The sum of " + num1 + " and " + num2 + " is " + total);
+        double average = getAverage(num1, num2);
+        System.out.println("The average from " + num1 + " and " + num2 + " is " + average);
     }
     
     public static double getNumber(String prompt) {
         Scanner sc = new Scanner(System.in);
+        System.out.println(prompt);
         return sc.nextDouble();
     }
 
