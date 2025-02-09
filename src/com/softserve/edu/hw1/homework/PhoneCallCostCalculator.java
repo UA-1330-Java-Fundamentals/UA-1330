@@ -1,15 +1,16 @@
 package com.softserve.edu.hw1.homework;
 
 import java.util.Scanner;
+
 public class PhoneCallCostCalculator {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         float c1;
         float c2;
         float c3;
         float t1;
         float t2;
         float t3;
-        Scanner scanner = new Scanner (System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the cost per minute of first call:");
         c1 = scanner.nextFloat();
         System.out.println("Enter the cost per minute of second call:");
@@ -30,5 +31,6 @@ public class PhoneCallCostCalculator {
         System.out.println("The cost of second call is: " + cost2);
         System.out.println("The cost of third call is :" + cost3);
         System.out.println("The total cost is: " + totalCost);
+        scanner.close();
     }
 }
