@@ -1,4 +1,4 @@
-package com.softserve.edu.HW3Lesson4ConditionStatements;
+package com.softserve.edu.HW3Lesson4ConditionStatements;//package name should be in lowercase
 
 
 

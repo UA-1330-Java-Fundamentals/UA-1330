@@ -5,7 +5,6 @@ class Dog {
     enum Breed {
         LABRADOR, BULLDOG, BEAGLE, POODLE, SHEPHERD
     }
-
     private String name;
     private Breed breed;
     private int age;
@@ -16,21 +15,13 @@ class Dog {
         this.age = age;
     }
 
-
     public static boolean nameChecker(Dog dog1, Dog dog2, Dog dog3) {
-
         if (dog1.getName().equals(dog2.getName())) {
             return true;
-        } else if (dog1.getName().equals(dog3.getName())) {
-            return true;
-        } else {
-            return false;
-        }
-
+        } else return dog1.getName().equals(dog3.getName());
     }
 
     public static Dog getOldesDog(Dog dog1, Dog dog2, Dog dog3) {
-
         if (dog1.age > dog2.age && dog1.age > dog3.age) {
             return dog1;
         } else if (dog2.age > dog1.age && dog2.age > dog3.age) {
@@ -38,7 +29,6 @@ class Dog {
         } else {
             return dog3;
         }
-
     }
 
     public String getName() {

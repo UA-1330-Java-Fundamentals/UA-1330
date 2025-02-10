@@ -7,7 +7,9 @@ public class PhoneCallCostCalculator {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int c1, c2, c3, t1, t2, t3, cost1, cost2, cost3 ,totalCost  ;
+        int c1, c2, c3, t1, t2, t3, cost1, cost2, cost3, totalCost;
+        // змінні краще оголошувати окремо на кожному рядку для кращої читабельності коду та відповідно до Java Code Conventions
+        // і не оголошувати зверху всі змінні, а оголошувати там де вони використовуються
 
         System.out.println("Enter the price per minute of the first second and third call");
 
@@ -21,32 +23,26 @@ public class PhoneCallCostCalculator {
         t2 = scanner.nextInt();
         t3 = scanner.nextInt();
 
-        cost1 = calculateCost(c1,t1);
-        cost2 = calculateCost(c2,t2);
-        cost3 = calculateCost(c3,t3);
+        cost1 = calculateCost(c1, t1);
+        cost2 = calculateCost(c2, t2);
+        cost3 = calculateCost(c3, t3);
 
         totalCost = calculateTotalCost(cost1, cost2, cost3);
 
         System.out.printf(
-                          "Result: \n"+
-                          "Сost of the first call: %d \n" +
-                          "Сost of the second call: %d \n"+
-                          "Сost of the third  call: %d \n"+
-                          "Total cost of all call: %d ", cost1, cost2, cost3, totalCost );
+                "Result: \n" +
+                        "Сost of the first call: %d \n" +
+                        "Сost of the second call: %d \n" +
+                        "Сost of the third  call: %d \n" +
+                        "Total cost of all call: %d ", cost1, cost2, cost3, totalCost);
 
     }
 
-    public static int calculateCost(int c, int t){
-
+    public static int calculateCost(int c, int t) {
         return c * t;
-
     }
 
-
-    public static int calculateTotalCost(int cost1, int cost2, int cost3){
-
+    public static int calculateTotalCost(int cost1, int cost2, int cost3) {
         return cost1 + cost2 + cost3;
-
     }
-
 }
