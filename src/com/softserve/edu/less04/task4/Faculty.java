@@ -2,12 +2,12 @@ package com.softserve.edu.less04.task4;
 
 public class Faculty {
     private int numberOfStudents;
-    private Season currentSeason;
+    private Seasons currentSeason;
 
     public Faculty() {
     }
 
-    public Faculty(int numberOfStudents, Season currentSeason) {
+    public Faculty(int numberOfStudents, Seasons currentSeason) {
         this.numberOfStudents = numberOfStudents;
         this.currentSeason = currentSeason;
     }
@@ -20,17 +20,16 @@ public class Faculty {
         this.numberOfStudents = numberOfStudents;
     }
 
-    public Season getCurrentSeason() {
+    public Seasons getCurrentSeason() {
         return currentSeason;
     }
 
-    public void setCurrentSeason(Season currentSeason) {
+    public void setCurrentSeason(Seasons currentSeason) {
         this.currentSeason = currentSeason;
     }
 
-    public void printInfo(){
+    public void printInfo() {
         System.out.println("Number of students: " + getNumberOfStudents());
-        System.out.println("Season: " + getCurrentSeason());
+        System.out.println("Season: " + Seasons.valueOf(getCurrentSeason().name()).getSeason());
     }
-
 }
