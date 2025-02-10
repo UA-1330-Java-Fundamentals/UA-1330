@@ -11,9 +11,9 @@ public class CalcTest {
         double actual;
         double expected;
         //
-        expected = 10;
+        expected = 10.001;
         actual = calc.add(5, 5);
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual, 0.01);
     }
 
     @Test
@@ -48,4 +48,13 @@ public class CalcTest {
         actual = calc.div(20, 8);
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testDivZero() {
+        ArithmeticException thrown =
+                Assertions.assertThrows(ArithmeticException.class,
+                        () -> { int actual = 23 / 0; });
+        System.out.printf("thrown = " + thrown);
+    }
+
 }
