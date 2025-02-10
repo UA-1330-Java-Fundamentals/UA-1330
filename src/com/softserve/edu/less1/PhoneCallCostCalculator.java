@@ -10,8 +10,8 @@ public class PhoneCallCostCalculator {
         int t1;
         int t2;
         int t3;
-        double cost1,cost2,cost3;
-        double totalCost;
+        double cost1, cost2, cost3;// розділяємо оголошення змінних на окремі рядки, це полегшує читання коду і відповідає стандартам
+        double totalCost; //Про це я вже писала в загальній гілці на дискорді і іншій задачі. Оголошуємо змінні коли вони використовуються, а не в самому початку
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the cost per minute c1 (double) > 0.0");
         c1 = sc.nextDouble();
