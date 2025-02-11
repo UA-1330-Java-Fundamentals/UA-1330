@@ -24,6 +24,8 @@ public class TaskTwo {
 
         System.out.println("The smallest number is " + smallestNumber);
 
+        System.out.println("The smallest number is " + SmallestNumber.findSmallest(n1, n2, n3));
+
 
 
 
