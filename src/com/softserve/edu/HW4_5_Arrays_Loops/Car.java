@@ -5,6 +5,13 @@ public class Car {
     private final int yearOfProduction;
     private final double engineCapacity;
 
+    public String getType() {
+        return type;
+    }
+    public int getYearOfProduction() {
+        return yearOfProduction;
+    }
+
     // Конструктор
     public Car(String type, int yearOfProduction, double engineCapacity) {
         this.type = type;

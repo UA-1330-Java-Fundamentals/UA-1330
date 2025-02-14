@@ -24,7 +24,6 @@ public class GuessTheNumber {
                 System.out.println("Congratulations! You guessed the number.");
             }
         }
-
         sc.close();
 
 

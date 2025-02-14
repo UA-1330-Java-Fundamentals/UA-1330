@@ -21,20 +21,13 @@ public class Main {
         /*----------------1-------------------------*/
 
         System.out.println("*Input a number of anything month");
-        int numOfMounth, numOfDay;
-        numOfMounth = sc.nextInt();
+        int numOfMounth = sc.nextInt();
 
-        if (numOfMounth > 12) {
-            System.out.println("Invalid input! Program will exit.");
-            return;
-        }
         System.out.println("Is there a leap year?(Yes/no)");
-
         String testLeap = sc.next();
-        switch (testLeap.toLowerCase()) {
-            case "yes", "+" -> numOfDay = TaskOne.getIumberDaysInMonthLeapYear(numOfMounth);
-            default -> numOfDay = TaskOne.getIumberDaysInMonthNOTLeapYear(numOfMounth);
-        }
+
+        int numOfDay = TaskOne.getNumberOfDaysInMounth(numOfMounth,testLeap);
+
         System.out.println("Mounts #" + numOfMounth + "have " + numOfDay + "days");
 
         /*----------------2-------------------------*/
@@ -86,7 +79,6 @@ public class Main {
             switch (answerQuestion.toLowerCase()) {
                 case "yes", "+" -> answer = true;
                 default -> answer = false;
-
             }
         } while (answer);
 
@@ -128,6 +120,7 @@ public class Main {
 //        should display "Too high, try again." If the user's guess is lower than the random number,
 //        the program should display "Too low, try again." The program should use a loop that
 //        repeats until the user correctly guesses the random number.
+
         System.out.println("Try to guess the number: ");
         GuessTheNumber.guessTheNumber();
 
