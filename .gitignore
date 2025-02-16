@@ -166,3 +166,5 @@ workspace.xml
 # Visual Studio Code
 /.vscode/
 
+
+.qodo
