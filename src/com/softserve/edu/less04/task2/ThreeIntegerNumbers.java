@@ -60,7 +60,7 @@ class ThreeIntegerNumbersCorrected {
      * @param message message to display to the user
      * @return the number entered by the user
      */
-    private static int promptNumber(Scanner scanner, String message) {
+    public static int promptNumber(Scanner scanner, String message) {
         System.out.print(message);
         while (!scanner.hasNextInt()) {
             System.out.println("Invalid input! Please enter an integer.");
