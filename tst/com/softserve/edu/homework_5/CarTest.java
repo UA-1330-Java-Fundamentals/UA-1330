@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class CarTest {
     @Test
-    public void createCarWithCorrectValues() {
+    public void createCarWithValidValues() {
         String type = "SUV";
         int year = 2001;
         double engineCapacity = 1500;
