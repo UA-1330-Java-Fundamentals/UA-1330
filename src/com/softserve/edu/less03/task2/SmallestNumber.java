@@ -1,4 +1,4 @@
-package com.softserve.edu.less2.task2;
+package com.softserve.edu.less03.task2;
 
 public class SmallestNumber {
     private int firstNumber;

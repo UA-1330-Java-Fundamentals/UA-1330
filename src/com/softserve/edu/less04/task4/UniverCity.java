@@ -1,6 +1,5 @@
 package com.softserve.edu.less04.task4;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class UniverCity {
