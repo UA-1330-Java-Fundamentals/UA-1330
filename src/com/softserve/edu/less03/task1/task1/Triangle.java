@@ -1,4 +1,4 @@
-package com.softserve.edu.less2.task1;
+package com.softserve.edu.less03.task1.task1;
 
 import java.util.Scanner;
 import static java.lang.Math.sqrt;

@@ -11,9 +11,9 @@ public class FlowerBedCalculator {
         int radius = sc.nextInt();
         System.out.println("Please, enter the int radius > 0: ");
         if (radius > 0) {
-            double perimeter = 2 * PI * radius; //оголошуємо змінну там де вона використовується, раніше не потрібно
+            double perimeter = 2 * PI * radius;
             System.out.println("perimeter =  " + perimeter);
-            double area = PI * radius * radius; //  аналогічно
+            double area = PI * radius * radius;
             System.out.println("area =  " + area);
         } else {
             System.out.println("wrong radius, restart program");
