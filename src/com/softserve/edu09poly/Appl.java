@@ -28,7 +28,7 @@ public class Appl {
 		}
 		*/
 		/*-
-		BmwX6 carX6mod2 = carPrint(ICar car);
+		BmwX6 carX6mod2 = new BmwX6mod();
 		carX6mod2.carRides();
 		carX6mod2.lightsShine();
 		*/
