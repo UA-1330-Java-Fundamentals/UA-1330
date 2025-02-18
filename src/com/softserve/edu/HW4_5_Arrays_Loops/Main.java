@@ -122,7 +122,8 @@ public class Main {
 //        repeats until the user correctly guesses the random number.
 
         System.out.println("Try to guess the number: ");
-        GuessTheNumber.guessTheNumber();
+
+        System.out.println( GuessTheNumber.guessTheNumber());
 
 //    5**. Add Unit Tests to each task, publish code on GitHub.
         //спробую  зробити пізніше ....

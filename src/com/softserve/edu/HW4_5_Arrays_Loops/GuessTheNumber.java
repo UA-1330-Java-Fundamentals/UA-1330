@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class GuessTheNumber {
 
-    public static void guessTheNumber(){
+    public static String guessTheNumber(){
 
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
@@ -17,16 +17,13 @@ public class GuessTheNumber {
             userGuess = sc.nextInt();
 
             if (userGuess < randomNumber) {
-                System.out.println("Too low, try again.");
+                return("Too low, try again.");
             } else if (userGuess > randomNumber) {
-                System.out.println("Too high, try again.");
-            } else {
-                System.out.println("Congratulations! You guessed the number.");
+                return("Too high, try again.");
             }
         }
         sc.close();
-
-
+        return("Congratulations! You guessed the number.");
 
     }
 
