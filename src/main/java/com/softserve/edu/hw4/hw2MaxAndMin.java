@@ -17,5 +17,6 @@ public class hw2MaxAndMin {
         System.out.printf("Entered numbers are: %.2f, %.2f and %.2f\n", num1, num2, num3);
         System.out.println("Min value is: " + min_num);
         System.out.println("Max value is: " + max_num);
+        sc.close();
     }
 }
