@@ -1,0 +1,40 @@
+package com.softserve.edu10clon;
+
+public class Person implements Cloneable { // extends Object
+	private FullName fullName;
+	private int age;
+
+	public Person(String firstName, String lastName, int age) {
+		this.fullName = new FullName(firstName, lastName);
+		this.age = age;
+	}
+
+	public FullName getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(FullName fullName) {
+		this.fullName = fullName;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [ fullName = " + fullName + ", age=" + age + " ]";
+	}
+
+	@Override
+	protected Person clone() throws CloneNotSupportedException {
+		//return super.clone();
+		Person myClone = (Person) super.clone();
+		myClone.setFullName(getFullName().clone());
+		return myClone;
+	}
+}
