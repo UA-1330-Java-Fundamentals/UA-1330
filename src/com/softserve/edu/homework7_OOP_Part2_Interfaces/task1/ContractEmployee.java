@@ -1,4 +1,4 @@
-package com.softserve.edu.homework6_OOP_Part2_Interfaces.task1;
+package com.softserve.edu.homework7_OOP_Part2_Interfaces.task1;
 
 public class ContractEmployee extends Employee implements Payment {
     private double average_monthly_salary, hourly_rate, number_of_hours_worked;
