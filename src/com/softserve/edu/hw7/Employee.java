@@ -1,6 +1,6 @@
 package com.softserve.edu.hw7;
 
-public abstract class Employee  {
+public abstract class Employee implements Payment, Comparable<Employee>  {
    protected String employeeId;
    protected String name;
 
@@ -17,7 +17,7 @@ public abstract class Employee  {
                 '}';
     }
 
- /*   public int compareTo(Employee employee) {
-        return name.compareTo(employee.name);
-    }*/
+    public int compareTo(Employee employee) {
+        return Double.compare(employee.calculatePay(),calculatePay());
+    }
 }

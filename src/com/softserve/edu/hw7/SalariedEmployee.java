@@ -19,7 +19,4 @@ public class SalariedEmployee extends Employee implements Payment {
     public String toString() {
         return super.toString() + "average monthly wage= " + calculatePay() ;
     }
-    public double getFixedMonthlyPayment() {
-        return fixedMonthlyPayment;
-    }
 }
