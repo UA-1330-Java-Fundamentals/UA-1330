@@ -36,5 +36,5 @@ public abstract class Person implements Cloneable {
         Person person = (Person) super.clone();
         person.setFullName(getFullName().clone());
         return person;
-     }
+    }
 }

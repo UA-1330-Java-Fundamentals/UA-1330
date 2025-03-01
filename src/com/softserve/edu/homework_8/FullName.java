@@ -1,6 +1,6 @@
 package com.softserve.edu.homework_8;
 
-public class FullName  implements Cloneable{
+public class FullName implements Cloneable {
     private String firstName;
     private String lastName;
 
