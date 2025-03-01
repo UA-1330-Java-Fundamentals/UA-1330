@@ -44,6 +44,7 @@ public class MyCollection {
         System.out.println("Updated collection with random three digit number " + randomThreeDigitNumber
                 + " before the first negative number: " + myCollection);
 
+        //Insert a zero between all neighboring elements collection myCollection with different signs
         List<Integer> modifiedList = new ArrayList<>();
 
         for (int i = 0; i < myCollection.size() - 1; i++) {
