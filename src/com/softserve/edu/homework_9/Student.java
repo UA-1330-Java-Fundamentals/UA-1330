@@ -104,7 +104,7 @@ public class Student {
 
         removeOrPromoteStudents(students);
         System.out.println("\nList without students with a grade point average of less than 3 " +
-                "and remaining promote students: " + students);
+                "and list with remaining promoted students: " + students);
 
         printStudents(students, 4);
     }
