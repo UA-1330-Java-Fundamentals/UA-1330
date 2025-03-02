@@ -35,4 +35,12 @@ public class Helicopter extends FlyngVehicle {
     public void land() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Helicopter{" +
+                "weight=" + weight +
+                ", maxHeight=" + maxHeight +
+                '}';
+    }
 }

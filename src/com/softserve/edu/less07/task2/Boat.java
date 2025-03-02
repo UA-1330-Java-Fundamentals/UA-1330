@@ -20,4 +20,11 @@ public class Boat extends WaterVechicle {
     public void setVolume(int volume) {
         this.volume = volume;
     }
+
+    @Override
+    public String toString() {
+        return "Boat{" +
+                "volume=" + volume +
+                '}';
+    }
 }

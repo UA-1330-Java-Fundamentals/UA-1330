@@ -14,4 +14,9 @@ public abstract class Passengers {
     public void setPassengers(int passengers) {
         this.passengers = passengers;
     }
+
+    @Override
+    public String toString() {
+        return "passengers=" + passengers;
+    }
 }

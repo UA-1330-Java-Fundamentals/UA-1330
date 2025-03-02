@@ -25,4 +25,11 @@ public class Plane extends FlyngVehicle {
     public void land() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Plane{" +
+                "maxDistanse=" + maxDistanse +
+                '}';
+    }
 }

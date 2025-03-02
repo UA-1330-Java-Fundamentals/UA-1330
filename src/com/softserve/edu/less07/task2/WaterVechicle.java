@@ -6,4 +6,5 @@ public abstract class WaterVechicle extends Passengers implements Vechicle{
     }
 
     public abstract void isSailing();
+
 }

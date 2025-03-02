@@ -20,4 +20,11 @@ public class Car extends GroundVehicle {
     public void drive() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                '}';
+    }
 }

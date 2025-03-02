@@ -20,4 +20,11 @@ public class Motorcycle extends GroundVehicle {
     public void drive() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Motorcycle{" +
+                "maxSpeed=" + maxSpeed +
+                '}';
+    }
 }

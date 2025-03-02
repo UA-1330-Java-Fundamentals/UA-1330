@@ -20,4 +20,11 @@ public class Liner extends WaterVechicle {
     public void setFloors(int floors) {
         this.floors = floors;
     }
+
+    @Override
+    public String toString() {
+        return "Liner{" +
+                "floors=" + floors +
+                '}';
+    }
 }
