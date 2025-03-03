@@ -10,7 +10,16 @@ public class AppStr {
 		String strFourth = new String(chA, 2, 4); // CDEF
 		System.out.println("strFourth = " + strFourth + " strFourth.length() = " + strFourth.length());
 		*/
-		/*-
+		/*
+		String str1 = "Hello ";
+		String str2 = "World!";
+		String str3 = str1 + str2;
+		String str4 = str1.concat(str2);
+		System.out.println("s3+s4 = " + (str3 + "  " + str4));
+		int str3Length = str3.length();
+		System.out.println("str3Length = " + str3Length);
+ 		*/
+		// /*-
 		String str = "I study Java Kava language abc";
 		int n = str.indexOf("ava"); // 9
 		//int n = str.lastIndexOf("ava"); // 14
@@ -32,7 +41,7 @@ public class AppStr {
 		System.out.println("str.startsWith(\"I study\") = " + str.startsWith("I study"));
 		System.out.println("str.startsWith(\"study\") = " + str.startsWith("study"));
 		System.out.println("str.endsWith(\"abc\") = " + str.endsWith("abc"));
-		*/
+		// */
 		/*-
 		String str = "\t\t   Tabulated  String\t  \n\n\r";
 		System.out.println(str);
@@ -64,7 +73,7 @@ public class AppStr {
         s = s + 'a' + "bcd";
         System.out.println("res = " + s);
         */
-		// /*-
+		/*-
 		String a0 = "Java"; // equals new String("Java");
 		String a1 = "Java"; // set reference
 		String a2 = new String("Java"); // create new object
@@ -84,7 +93,7 @@ public class AppStr {
 		//
 		a1 = a1 + "12";
 		System.out.println("a0 = " + a0 + "  a1 = " + a1);
-		// */
+		*/
  		/*-
 		final double PI = 3.1415926;
 		String formatStr = "%S is =%06.2f\n";
