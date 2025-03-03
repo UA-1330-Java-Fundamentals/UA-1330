@@ -6,7 +6,7 @@ public class ApplListIter {
 	public static void main(String[] args) {
 		//
 		// Iterator
-		// /*-
+		/*-
 		List<String> list = new ArrayList<>();
 		list.add("First element");
 		list.add("Second element");
@@ -32,7 +32,7 @@ public class ApplListIter {
 			String current = iterator.next();
 			System.out.println("current: " + current);
 		}
-		// */
+		*/
 		/*-
 		List<String> list = new ArrayList<>();
 		list.add("First element");
@@ -51,7 +51,7 @@ public class ApplListIter {
                 list.remove(i);
 				//i--;
             }
-        }
+//        }
 		//
 //        for (String current : list) {
 //            System.out.println(current);
@@ -61,7 +61,7 @@ public class ApplListIter {
 //        }
         */
 		//
-		/*-
+		// /*-
 		//List<String> list = new ArrayList<>();
 		List<String> list = new LinkedList<>();
 		list.add("First element");
@@ -96,12 +96,12 @@ public class ApplListIter {
 		        iterator.remove();
 		    }
 		}
-		*/
-		/*-
+		// */
+		// /*-
 		System.out.println("\nFinal List:");
 		for (String current : list) {
 		    System.out.println(current);
 		}
-		*/
+		// */
 	}
 }
