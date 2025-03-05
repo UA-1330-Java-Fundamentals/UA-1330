@@ -19,7 +19,7 @@ public class AppStr {
 		int str3Length = str3.length();
 		System.out.println("str3Length = " + str3Length);
  		*/
-		// /*-
+		/*-
 		String str = "I study Java Kava language abc";
 		int n = str.indexOf("ava"); // 9
 		//int n = str.lastIndexOf("ava"); // 14
@@ -41,20 +41,24 @@ public class AppStr {
 		System.out.println("str.startsWith(\"I study\") = " + str.startsWith("I study"));
 		System.out.println("str.startsWith(\"study\") = " + str.startsWith("study"));
 		System.out.println("str.endsWith(\"abc\") = " + str.endsWith("abc"));
-		// */
+		System.out.println("str.endsWith(\"abc\") = " + str.endsWith(("Java", 8)); // true
+		*/
 		/*-
-		String str = "\t\t   Tabulated  String\t  \n\n\r";
+		String str = "\t\t   Tabulated      String\t  \n\n\r";
 		System.out.println(str);
 		str = str.trim();
+		//str = str.replace("  ", " ");
+		str = str.replaceAll(" +", " ");
 		System.out.println(str);
 		*/
 		/*-
 		String str = "abracadabra abba";
-		System.out.println(str);
-		str = str.replace("a", "--");
+		System.out.println("Original:\r\n" + str);
+		str = str.replace("a", "--"); // Change for all
 		//str = str.replaceAll("a\\b", "--"); // \b word boundary
 		//str = str.replaceFirst("a", "--");
 		//str = str.replaceFirst("b", "--");
+		//str = str.replace("ab", "--");
 		System.out.println(str);
 		str = ""; // null
 		System.out.println("str.isEmpty() = " + str.isEmpty());
@@ -104,29 +108,34 @@ public class AppStr {
 		System.out.printf(formatStr, "pi", PI);
 		System.out.printf("hashcode =%h", 64);
 		//
-		String s2 = "\n%S is =%06.2f\n".formatted("pi", PI);
+		String s2 = "\n%S is =%6.2f\n".formatted("pi", PI);
 		System.out.println(s2);
 		*/
-		/*-
+		// /*-
 		String s1 = new String("Hello");
 		String s2 = " And Goodbye";
 		String str = s1 + s2;
 		// str = s1.concat(s2);
 		System.out.println("str = " + str);
 		//
-		StringBuilder sb = new StringBuilder(s1);
-		sb.append(s2);
+		//StringBuilder sb = new StringBuilder(s1);
+		//StringBuilder sb = new StringBuilder();
+		StringBuilder sb = new StringBuilder(21);
+		System.out.println("Start sb.capacity() = " + sb.capacity());
+		sb.append(s1 + "___");
+		sb.insert(6, s2);
+		//sb.append(s2);
 		// str = sb.toString();
 		System.out.println(" sb = " + sb); // toString()
 		System.out.println(" sb.length() = " + sb.length());
 		System.out.println(" sb.capacity() = " + sb.capacity());
-		sb.append("12345");
+		sb.append("123456");
 		System.out.println("new sb.length() = " + sb.length());
 		System.out.println("new sb.capacity() = " + sb.capacity());
 		System.out.println("Reverse sb = " + sb.reverse());
 		//
 		sb.reverse().delete(1,3);
 		System.out.println("after delete sb = " + sb);
-		*/
+		// */
     }
 }
