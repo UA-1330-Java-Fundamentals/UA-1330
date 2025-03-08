@@ -1,7 +1,7 @@
 package com.softserve.edu.homework8_Nested_And_Inner_Classes;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
 
         FullName fullName1 = new FullName("Alice", "Smith");
         FullName fullName2 = new FullName("Bob", "Johnson");

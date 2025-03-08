@@ -1,6 +1,6 @@
 package com.softserve.edu.homework8_Nested_And_Inner_Classes;
 
-public class Student extends Person {
+public class Student extends Person implements Cloneable {
     public int getCourse() {
         return course;
     }
@@ -16,11 +16,6 @@ public class Student extends Person {
         this.course = course;
     }
 
-    public Student(Student student) {
-        super(student.getFullName(), student.getAge());
-        this.course = student.course;
-    }
-
     @Override
     public String info() {
         return super.info() + ", Course: " + course;
@@ -31,7 +26,9 @@ public class Student extends Person {
         return "I study at university";
     }
 
-    public Student clone() {
-        return new Student(this);
+    @Override
+    public Student clone() throws CloneNotSupportedException {
+        return (Student) super.clone();
     }
+
 }
