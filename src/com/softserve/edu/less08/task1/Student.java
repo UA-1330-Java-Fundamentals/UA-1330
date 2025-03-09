@@ -27,9 +27,13 @@ public class Student extends Person implements Cloneable {
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        Person copyofPerson = (Person) super.clone();
-        copyofPerson.setFullName((FullName)copyofPerson.getFullName().clone());
-        return copyofPerson;
+    protected Person clone() {
+        try {
+            Person copyofPerson = (Person) super.clone();
+            copyofPerson.setFullName((FullName) copyofPerson.getFullName().clone());
+            return copyofPerson;
+        } catch (CloneNotSupportedException e) {
+            return null;
+        }
     }
 }

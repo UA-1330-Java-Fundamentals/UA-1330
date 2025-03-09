@@ -2,7 +2,7 @@ package com.softserve.edu.less08.task1;
 
 public abstract class Person {
 
-    public static class FullName implements Cloneable{
+    public static class FullName implements Cloneable {
         private String firstName;
         private String lastName;
 
@@ -28,8 +28,12 @@ public abstract class Person {
         }
 
         @Override
-        protected Object clone() throws CloneNotSupportedException {
-            return super.clone();
+        protected FullName clone() {
+            try {
+                return (FullName) super.clone();
+            } catch (CloneNotSupportedException e) {
+                return null;
+            }
         }
     }
 
