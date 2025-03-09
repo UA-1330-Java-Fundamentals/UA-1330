@@ -28,7 +28,7 @@ public abstract class Person {
         }
 
         @Override
-        protected FullName clone() {
+        public FullName clone() {
             try {
                 return (FullName) super.clone();
             } catch (CloneNotSupportedException e) {

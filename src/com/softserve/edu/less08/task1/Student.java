@@ -27,7 +27,7 @@ public class Student extends Person implements Cloneable {
     }
 
     @Override
-    protected Person clone() {
+    public Person clone() {
         try {
             Person copyofPerson = (Person) super.clone();
             copyofPerson.setFullName((FullName) copyofPerson.getFullName().clone());
