@@ -27,19 +27,21 @@ public class AppRegex {
 		String pattern = "<([^>]+)>[^><]+</\\1>"; // \1 == group(1)
 		String text = "<p><b>Beginning with bold text</b> next, <span>text</span> body,<i>italic text</i> end of text.</p>";
 		*/
-		//
+		/*
 		String pattern = "\\w+(\\.\\w+)*@(\\w+\\.)+\\w{2,}";
 		System.out.println("Pattern = " + pattern);
 		//String text = "a.bd.c@gmail.com";
 		String text = "a.b.c@gmail.com a@i.ua a.@gmail.com a@gmail.a";
-		//
+		*/
+		/*
 		//String pattern = "\\b(\\d{1,3}[,'])*\\d{1,3}\\.\\d{2}\\b";
-		//String pattern = "\\b\\d{1,3}([,'`]\\d{3})*\\.\\d{2}\\b";
-		//String text = "4 item(s) - $1'111,450.40 text";
+		String pattern = "\\b\\d{1,3}([,'`]\\d{3})*\\.\\d{2}\\b";
+		String text = "4 item(s) - $1'111,450.40 text";
+		*/
 		//
-		//String pattern ="\"par\":\\s*\"(\\w+)\"";
-		//String text = "{\"key\":\"value\",\"par\":\"data1\",\"key2\":\"value2\"}";
-		//System.out.println("JSON = " + text);
+		String pattern ="\"par\":\\s*\"(\\w+)\"";
+		String text = "{\"key\":\"value\",\"par\":\"data1\",\"key2\":\"value2\"}";
+		System.out.println("JSON = " + text);
 		//
 		Pattern p = Pattern.compile(pattern);
 		Matcher m = p.matcher(text);
@@ -62,9 +64,11 @@ public class AppRegex {
 			double num = Double.valueOf(sNum);
 			System.out.println("num + 1 = " + (num + 1.11));
 			*/
-			//System.out.println("grop1 = " + m.group(1));
+			System.out.println("grop1 = " + m.group(1));
 			//
-			System.out.print(text.substring(m.start(), m.end()) + "*");
+			//System.out.println("grop1 = " + m.group());
+			//System.out.print(text.substring(m.start(), m.end()) + "*");
+			//
 			//System.out.print(text.substring(m.start() + 1, m.end() - 1).trim() + "*");
 			//list.add(text.substring(m.start(), m.end()));
 		}
