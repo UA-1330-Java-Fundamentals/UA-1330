@@ -12,6 +12,7 @@ class Base {
 class Child extends Base {
     @Override
     //public void doSomething() throws Exception { // Compile Error
+    // public void doSomething() {  // Ok
     public void doSomething() throws IOException {  // Ok
         //public void doSomething() {  // Ok
         System.out.println("Child");
