@@ -2,11 +2,11 @@ package com.softserve.edu16lambda;
 
 import java.util.Scanner;
 
-//@FunctionalInterface
+@FunctionalInterface
 interface MyFunctional {
 	double f(double x);
-	//double g(double x);
-	//boolean equals(Object obj);
+	//double g(double x); // Compile Error
+	//boolean equals(Object obj); // OK
 }
 
 class MyF implements MyFunctional {
