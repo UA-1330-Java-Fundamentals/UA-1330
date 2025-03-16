@@ -30,12 +30,12 @@ public class FiveWordsSentenceOperator {
             }
         }
 
-        System.out.println("\nYou entered: \"" + input +"\"");
+        System.out.println("\nYou entered: \"" + input + "\"");
         scanner.close();
 
         //Find the longest word
-        for (String word: words) {
-            if(word.length() > longestWord.length()) {
+        for (String word : words) {
+            if (word.length() > longestWord.length()) {
                 longestWord = word;
             }
         }
