@@ -65,7 +65,7 @@ public class Student {
 
         System.out.println("\nStudents sorted by name:");
         for (Student student : students) {
-            System.out.println(student.getName() + "-> Course " + student.getCourse());
+            System.out.println(student.getName() + " -> Course " + student.getCourse());
         }
     }
 
@@ -82,7 +82,7 @@ public class Student {
 
         System.out.println("\nStudents sorted by course:");
         for (Student student : students) {
-            System.out.println(student.getName() + "->  Course " + student.getCourse());
+            System.out.println(student.getName() + " ->  Course " + student.getCourse());
         }
     }
 }
