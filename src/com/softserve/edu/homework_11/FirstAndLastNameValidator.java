@@ -48,7 +48,6 @@ public class FirstAndLastNameValidator {
             }
         }
 
-
         // Print the random greeting using printf
         String[] greetings = {
                 "Good to see you again, %s!",
