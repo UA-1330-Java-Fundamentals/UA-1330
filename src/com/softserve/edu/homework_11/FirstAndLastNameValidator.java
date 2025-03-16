@@ -21,7 +21,6 @@ public class FirstAndLastNameValidator {
         String pattern = "^[A-Za-z]+([ -][A-Za-z]+)*$";
         Pattern p = Pattern.compile(pattern);
 
-
         String firstName;
 
         while (true) {
