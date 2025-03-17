@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/*
+The task requires implementation of a pattern to match US currency format, which includes a
+dollar sign ($) followed by any number of digits, a dot, and two digits after the dot. The next step
+is to input a text containing several instances of US currency format via the console. Finally,
+display all the occurrences of US currency format on the console screen.
+ */
+
 public class USCurrencyFormatChecker {
 
     public static void main(String[] args) {
