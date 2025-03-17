@@ -51,7 +51,7 @@ public class myCollection {
         newCollection.forEach(System.out::println);
         System.out.println("\n");
         min = newCollection.stream().min(Integer::compareTo).get();
-        if (min == myCollection.getLast()) {
+        if (min.equals(myCollection.getLast())) {
             System.out.println("the minimum\n" +
                     "element is the last one");
         } else {
