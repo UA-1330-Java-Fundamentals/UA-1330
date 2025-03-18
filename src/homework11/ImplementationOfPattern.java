@@ -29,3 +29,10 @@ public class ImplementationOfPattern {
         scan.close();
     }
 }
+/*
+If you enter text without any matches, the program simply exits without a message. 
+You could add a message like "No matches found."
+Although the program is simple and fully meets the requirements, 
+it's better practice to extract logic into methods rather than implementing everything directly in main. 
+This approach makes the program more flexible and easier to test.
+*/
