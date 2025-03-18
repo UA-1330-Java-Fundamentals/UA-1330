@@ -6,9 +6,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class task1 {
-
-    public static String[] InputFiveWords(){
+public class task1 {//Task1 for convention
+/*You're creating a new Scanner object every time the method is called. 
+This could lead to resource issues if the method is invoked frequently. 
+It's better to pass the Scanner as a parameter.
+Use sc.next() instead of sc.nextLine() if you need to read individual words.
+*/
+    public static String[] InputFiveWords(){//inputFiveWords
         System.out.println("Enter a sentence consists of 5 words.");
         Scanner sc = new Scanner(System.in);
         String[] currentWord = new String[5];
@@ -21,7 +25,7 @@ public class task1 {
         return currentWord;
     }
 
-    public static String ConvertListToString(String[] array){
+    public static String ConvertListToString(String[] array){//convertListToString
         StringBuffer sa = new StringBuffer();
         for (String s : array) {
             sa.append((s + " "));
@@ -29,7 +33,7 @@ public class task1 {
         return sa.toString();
     }
 
-    public static void FindMaxWordLength(String[] array){
+    public static void FindMaxWordLength(String[] array){//find...
         int max = array[0].length();
         int maxWordNumber =0;
         StringBuffer sb= new StringBuffer();
@@ -43,7 +47,7 @@ public class task1 {
         }
         System.out.println("Longest word is "+ array[maxWordNumber] + " with length " + max );
     }
-    public static String ReverseSecondWord(String[] array){
+    public static String ReverseSecondWord(String[] array){//revers...
        array[1] = reverseWord(array[1]);
        return array[1];
     }
