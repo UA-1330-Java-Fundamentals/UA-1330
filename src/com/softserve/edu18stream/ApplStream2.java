@@ -49,14 +49,14 @@ public class ApplStream2 {
             .limit(10)
             .forEach(k -> System.out.print(k + "  ") );
         */
-		// /*-
+		/*-
 		List<Integer> numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5);
 		List<String> squaresList = numbers.stream()
 				.distinct()
 				.map(i -> String.valueOf(i * i) + "*")
 				.collect(Collectors.toList());
 		squaresList.forEach(System.out::print);
-		// */
+		*/
 		/*-
 		List<Integer> numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5);
 		Map<String, String> squaresMap = numbers.stream()
@@ -74,7 +74,7 @@ public class ApplStream2 {
 				.count();
 		System.out.println("\ncount = " + count);
 		*/
-		/*-
+        /*-
 		List<String> parents = Arrays.asList("Petro", "Ivan", "Ira", "Adriy");
 		//List<String> parents = Arrays.asList("Petro");
 		//List<String> parents = Arrays.asList();
@@ -94,8 +94,9 @@ public class ApplStream2 {
 		*/
 		/*
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
-		int result = numbers.stream().reduce(0, (subtotal, element) -> subtotal + element);
-		//int result = numbers.stream().reduce(0, (sum, p) -> sum += p, (subtotal, element) -> subtotal + element);
+		//int result = numbers.stream().reduce(0, (subtotal, element) -> subtotal + element);
+		int result = numbers.stream()
+                .reduce(0, (sum, p) -> sum += p, (subtotal, element) -> subtotal + element);
 		System.out.printf("result = " + result);
 		*/
 		/*
@@ -105,8 +106,9 @@ public class ApplStream2 {
 		*/
 		/*
 		List<Integer> listNum = Arrays.asList ( 1, 2, 3, 4 );
-		//int result = listNum.stream().reduce(5, Integer::sum);
-		int result = listNum.parallelStream().reduce(0, Integer::sum) + 5;
+		//int result = listNum.stream().reduce(5, Integer::sum); // 15
+        // int result = listNum.parallelStream().reduce(5, Integer::sum); // 30
+		int result = listNum.parallelStream().reduce(0, Integer::sum) + 5; // 15
 		System.out.printf("result = " + result);
 		*/
         /*
@@ -159,14 +161,32 @@ public class ApplStream2 {
 		*/
 		/*
 		List<String> list = Arrays.asList("Start", "Start", "Third", "Fourth");
+        //List<String> result = list.stream().collect(Collectors.toList());
 		//Set<String> result = list.stream().collect(Collectors.toSet());
 		//Collection<String> result = list.stream().collect(Collectors.toCollection(LinkedList::new));
-		//Map<String, Integer> result = list
-		//		.stream().collect(Collectors.toMap(Function.identity(), String::length));
+//		Map<String, Integer> result = list
+//				.stream().collect(Collectors.toMap(Function.identity(), String::length));
 		Map<String, Integer> result =
-				list.stream().collect(Collectors.toMap(Function.identity(), String::length, (item, identicalItem) -> item));
+				list.stream().collect(Collectors
+                        .toMap(Function.identity(), String::length, // (item, identicalItem) -> item));
+                                (item, identicalItem) -> {
+                                    System.out.println("item = " + item + "  identicalItem = " + identicalItem);
+                                    return item;
+                                }));
 		System.out.printf("result = " + result + "\n class: " + result.getClass().getName());
 		*/
+        /*
+        Stream<String> num = Stream
+                .generate( () -> new Random().nextInt(100) )
+                .limit(10)
+                .map(s -> String.valueOf(s));
+        Stream<String> lst = List.of("aab", "ac", "", "abc").stream()
+                .filter(s -> s.length() > 2);
+        List<String> result = Stream.of(num, lst)
+                .flatMap(s -> s) // Function.identity()
+                .collect(Collectors.toList());
+        System.out.println("result = " + result);
+        */
 		/*-
 		List<String> nums = Arrays.asList("3", "2", "2", "3", "7", "3", "5");
 		IntSummaryStatistics stats = nums.stream()
@@ -178,7 +198,7 @@ public class ApplStream2 {
 		System.out.println("Sum of all numbers : " + stats.getSum());
 		System.out.println("Average of all numbers : " + stats.getAverage());
 		*/
-		/*-
+		// /*-
 		Integer value1 = null; // 1;
 		Integer value2 = 12; // null;
 		// Optional.ofNullable - allows passed parameter to be null.
@@ -192,6 +212,6 @@ public class ApplStream2 {
 		b.ifPresent(s -> System.out.println("ifPresetn b = " + b.get()));
 		System.out.println("sum = " + sum(a, b)); // sum1(value1, value2)
 		System.out.println("sum1 = " + sum1(value1, value2));
-		*/
+		// */
     }
 }
