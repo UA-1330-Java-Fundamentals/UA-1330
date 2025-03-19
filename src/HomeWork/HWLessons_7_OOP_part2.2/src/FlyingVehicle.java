@@ -1,6 +1,6 @@
-package Task2;
 
-public class FlyingVehicle extends Passengers implements Vehicle {
+
+public abstract class FlyingVehicle extends Passengers implements Vehicle {
     public FlyingVehicle(int passengers) {
         super(passengers);
     }

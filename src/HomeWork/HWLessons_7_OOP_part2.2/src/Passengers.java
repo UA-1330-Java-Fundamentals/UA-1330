@@ -1,6 +1,6 @@
-package Task2;
 
-public class Passengers {
+
+public abstract class Passengers {
     private int passengers;
 
     public Passengers(int passengers) {

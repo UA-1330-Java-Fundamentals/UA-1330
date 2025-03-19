@@ -1,4 +1,4 @@
-package Task2;
+
 
 public class Plane extends FlyingVehicle {
     private int maxDistance;
@@ -24,5 +24,12 @@ public class Plane extends FlyingVehicle {
 
     public void setMaxDistance(int maxDistance) {
         this.maxDistance = maxDistance;
+    }
+
+    @Override
+    public String toString() {
+        return "Plane { " +
+                "maxDistance=" + maxDistance +
+                '}';
     }
 }

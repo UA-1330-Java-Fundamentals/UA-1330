@@ -1,4 +1,4 @@
-package Task2;
+
 
 public class Motorcycle extends GroundVehicle {
     private int maxSpeed;
@@ -19,5 +19,12 @@ public class Motorcycle extends GroundVehicle {
 
     public void setMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
+    }
+
+    @Override
+    public String toString() {
+        return "Motorcycle { " +
+                "maxSpeed=" + maxSpeed +
+                '}';
     }
 }

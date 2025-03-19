@@ -1,4 +1,4 @@
-package Task2;
+
 
 public class Helicopter extends FlyingVehicle {
     private int weight;
@@ -18,5 +18,13 @@ public class Helicopter extends FlyingVehicle {
     @Override
     public boolean land() {
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Helicopter { " +
+                "weight=" + weight +
+                ", maxHeight=" + maxHeight +
+                '}';
     }
 }

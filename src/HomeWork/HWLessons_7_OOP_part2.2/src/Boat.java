@@ -1,4 +1,4 @@
-package Task2;
+
 
 public class Boat extends WaterVehicle {
     private int volume;
@@ -19,5 +19,12 @@ public class Boat extends WaterVehicle {
 
     public void setVolume(int volume) {
         this.volume = volume;
+    }
+
+    @Override
+    public String toString() {
+        return "Boat { " +
+                "volume=" + volume +
+                '}';
     }
 }

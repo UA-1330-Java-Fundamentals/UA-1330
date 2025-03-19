@@ -1,4 +1,4 @@
-package Task2;
+
 
 public class Bus extends GroundVehicle {
     private String route;
@@ -19,5 +19,12 @@ public class Bus extends GroundVehicle {
 
     public void setRoute(String route) {
         this.route = route;
+    }
+
+    @Override
+    public String toString() {
+        return "Bus { " +
+                "route='" + route + '\'' +
+                '}';
     }
 }

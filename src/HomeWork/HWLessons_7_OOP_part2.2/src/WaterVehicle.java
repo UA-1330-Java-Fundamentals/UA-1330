@@ -1,6 +1,6 @@
-package Task2;
 
-public class WaterVehicle extends Passengers implements Vehicle {
+
+public abstract class WaterVehicle extends Passengers implements Vehicle {
 
 
     public WaterVehicle(int passengers) {

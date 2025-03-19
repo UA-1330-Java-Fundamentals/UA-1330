@@ -1,4 +1,4 @@
-package Task2;
+
 
 public class Liner extends WaterVehicle {
     private int floors;
@@ -19,5 +19,12 @@ public class Liner extends WaterVehicle {
 
     public void setFloors(int floors) {
         this.floors = floors;
+    }
+
+    @Override
+    public String toString() {
+        return "Liner {\t" +
+                "floors=" + floors +
+                '}';
     }
 }
