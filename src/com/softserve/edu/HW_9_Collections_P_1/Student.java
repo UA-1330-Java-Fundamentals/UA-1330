@@ -2,6 +2,7 @@ package com.softserve.edu.HW_9_Collections_P_1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 class Student {
     private String name;
