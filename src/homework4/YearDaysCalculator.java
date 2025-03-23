@@ -27,7 +27,14 @@ public class YearDaysCalculator {
         } else {
             return 365;
         }
-
-
     }
+    //You can make the logic more concise by combining conditions with logical operators.
+    // This is a standard way to determine a leap year:
+  /*  public static int calculateDaysInYear(int year) {
+    if (year <= 0) {
+        throw new IllegalArgumentException("Year must be more than 0");
+    }
+    boolean isLeap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+    return isLeap ? 366 : 365;
+    }*/
 }

@@ -29,6 +29,10 @@ public class CommonElementsFinderStarter {
         if (list1.isEmpty() || list2.isEmpty()){
            return new ArrayList<>();
        }
+      //You can combine the null and isEmpty checks into a single condition for conciseness:
+        //if (list1 == null || list2 == null || list1.isEmpty() || list2.isEmpty()) {
+           //return new ArrayList<>();
+       //}
 
        List<Integer> commonElements = new ArrayList<>();
 
@@ -41,8 +45,12 @@ public class CommonElementsFinderStarter {
         return commonElements; // Placeholder return statement
     }
     //This method takes a list and returns the maximum value from that list, or null if the list is empty.
+    
+   // Currently, the method doesn't handle the case when list is null. 
+   //If null is passed, a NullPointerException will occur on list.isEmpty().
+    //To fully meet the requirements, you should add the following check:
     public static Integer findMaxValue(List<Integer> list) {
-        if (list.isEmpty()){
+        if (list == null || list.isEmpty()){
             return null;
         }
         return Collections.max(list); // Placeholder return statement

@@ -31,10 +31,13 @@ public class CollectionMerger {
         if (list1 == null){
             list1 = new ArrayList<>();
         }
+        
         if (list2 == null){
             list2 = new ArrayList<>();
         }
-
+        //The check can be replaced with a more concise one.
+        //list1 = Objects.requireNonNullElse(list1, new ArrayList<>());
+       //list2 = Objects.requireNonNullElse(list2, new ArrayList<>());
 
         List<String> mergedList = new ArrayList<>();
 
