@@ -1,5 +1,7 @@
 package com.softserve.edu.hw6.Task1;
-    public static void main(String[] args) {
+
+public class Main {
+public static void main(String[] args) {
         Bird[] birds = new Bird[4];
 
         birds[0] = new Eagle("Brown feathers", true);
@@ -15,3 +17,4 @@ package com.softserve.edu.hw6.Task1;
             System.out.println("Feathers: " + bird.feathers + ", Lay Eggs: " + bird.layEggs);
         }
     }
+}
