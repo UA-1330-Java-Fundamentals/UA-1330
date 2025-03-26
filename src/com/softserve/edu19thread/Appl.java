@@ -17,10 +17,10 @@ public class Appl {
 		t1.start();
 		t2.start();
 		//
-		//t1.join();
-		//t2.join();
+		t1.join();
+		t2.join();
 		//
-		//t1.start(); // Thread t1 Dead
+		//t1.start(); // Runtime Errror, Thread t1 Dead
 //        for (int i = 0; i < 10000; i++) {
 //        	Thread.yield();
 //        }
