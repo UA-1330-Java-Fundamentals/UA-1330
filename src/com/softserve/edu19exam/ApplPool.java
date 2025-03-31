@@ -21,7 +21,7 @@ public class ApplPool {
 	public static Object monitor = new Object();
 
 	public static void main(String[] args) throws InterruptedException {
-		ExecutorService executor = Executors.newFixedThreadPool(5);
+		ExecutorService executor = Executors.newFixedThreadPool(5); // Count Threads ?
 		//
 		for (int i = 0; i < 11; i++) {
 			Runnable worker = new Worker(i);
