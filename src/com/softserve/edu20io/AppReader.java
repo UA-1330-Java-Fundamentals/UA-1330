@@ -21,18 +21,34 @@ public class AppReader {
             for (int i = (int) (Math.random() * 10); i >= 0; i--) {
                 bw.write(data);
             }
-            bw.close();
+            //bw.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                bw.close();
+            } catch (Exception e) {
+                System.out.println("Close Error");
+            }
+        }
+        try {
             fr = new FileReader(fileName);
             br = new BufferedReader(fr);
             String s = null;
             int count = 0;
             System.out.println("Read data from file: " + fileName);
-            while ( (s = br.readLine()) != null ) {
+            while ((s = br.readLine()) != null) {
                 System.out.println("row " + ++count + " read:" + s);
             }
-            br.close();
+            //br.close();
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            try {
+                br.close();
+            } catch (Exception e) {
+                System.out.println("Close Error");
+            }
         }
     }
 }
