@@ -20,5 +20,8 @@ public class LeapYear {
         int year = sc.nextInt();
         isValidYear(year);
         sc.close();
+
     }
+
 }
+
