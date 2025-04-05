@@ -1,0 +1,3 @@
+My name is Julia Klochko, by birthdate is 01.10.85
+I am Manual QA Engineer
+I'm learning to become an Automation QA Engineer.
