@@ -1,0 +1,3 @@
+Number of lines in file1.txt: 3
+The longest line in file1.txt: I work as a quality assurance engineer for 4 years in a local IT company.
+My name: Anastasiia Shpak, my birthday: January 4, 2001
