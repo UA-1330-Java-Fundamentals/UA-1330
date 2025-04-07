@@ -53,7 +53,14 @@ class MainServer {
             System.out.println("\nBody:\n" + stringBuilder);
             // TODO split parameters
             //
-            var response = "Hello, HTTP world!".getBytes();
+            //var response = "Hello, HTTP world!".getBytes();
+            var response = """
+                    <html>
+                      <body>
+                        <h1>Hello, HTTP world!</h1>
+                      </body>
+                    </html>
+                    """.getBytes();
             exchange.sendResponseHeaders(200, response.length);
             exchange.getResponseBody().write(response);
         });
