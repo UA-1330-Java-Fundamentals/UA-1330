@@ -62,3 +62,6 @@ public class TasksServer {
 
         }
 }
+
+//To test Get open browser http://localhost:8080/tasks
+//To test Post send Post request using Postman http://localhost:8080/tasks with task in Body: raw, text
