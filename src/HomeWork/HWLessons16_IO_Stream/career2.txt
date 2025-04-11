@@ -1,0 +1,4 @@
+Numbers of lines = 6
+Longest line = 2022-2025 my current job
+name = Ivan Ivanov
+birthday = 02.06.1990
