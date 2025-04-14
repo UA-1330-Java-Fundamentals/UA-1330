@@ -1,0 +1,4 @@
+3
+I'm learning to become an Automation QA Engineer.
+birthdate is 01.10.85
+name is Julia Klochko

@@ -1,0 +1,5 @@
+Fruit:apple color:red
+Fruit:banana color:yellow
+Fruit:kiwi color:green
+Fruit:lemon color:yellow vitaminCGrams:0.005
+Fruit:tangerine color:orange vitaminCGrams:0.23
