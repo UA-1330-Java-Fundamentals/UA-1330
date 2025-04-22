@@ -6,48 +6,47 @@ public class Main {
     private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Please, enter the cipher type (caesar or xor): ");
-        String cipherType = inputReaderString();
-
-        System.out.println("Please, enter the target operation (enc or dec): ");
-        String targetOperation = inputReaderString();
-
-        System.out.println("Please, enter the int key (between 0...25): ");
-        int key = inputReaderInt();
-        if ((key < 0 || key > 25) && args.length > 1) {
-            key = Integer.parseInt(args[1]);
-        }
+        String cipherType = prompt("Please, enter the cipher type (caesar or xor): ");
+        String operation = prompt("Please, enter the target operation (enc or dec): ");
+        int key = promptInt("Please, enter the int key (between 0...25): ");
 
         FileManager fm = new FileManager();
         String content = fm.read("files/input.txt");
-        String result = "";
 
-        if (cipherType.equals("caesar")) {
-            CaesarCipher cipher = new CaesarCipher();
-            if (targetOperation.equals("dec")) {
-                result = cipher.decrypt(message, key);
-                fm.write("files/output.txt", cipher.decrypt(content, key));
-            } else {
-                result = cipher.encrypt(message, key);
-                fm.write("files/output.txt", cipher.encrypt(content, key));
-            }
-        } else if (cipherType.equals("xor")) {
-            XorCipher cipher = new XorCipher();
-            if (targetOperation.equals("dec")) {
-                result = cipher.decrypt(message, key);
-                fm.write("files/output.txt", cipher.decrypt(content, key));
-            } else {
-                result = cipher.encrypt(message, key);
-                fm.write("files/output.txt", cipher.encrypt(content, key));
-            }
+        String result = processCipher(cipherType, operation, content, key);
+        if (result != null) {
+            fm.write("files/output.txt", result);
+            System.out.println("Result: " + result);
         } else {
-            System.out.println("Unknown cipher type.");
+            System.out.println("An error occurred. Please check your input.");
         }
 
-        System.out.println("Result: " + result);
         SCANNER.close();
     }
 
+    private static String processCipher(String type, String operation, String data, int key) {
+        switch (type) {
+            case "caesar":
+                CaesarCipher caesar = new CaesarCipher();
+                return operation.equals("dec") ? caesar.decrypt(data, key) : caesar.encrypt(data, key);
+            case "xor":
+                XorCipher xor = new XorCipher();
+                return operation.equals("dec") ? xor.decrypt(data, key) : xor.encrypt(data, key);
+            default:
+                System.out.println("Unknown cipher type.");
+                return null;
+        }
+    }
+
+    private static String prompt(String message) {
+        System.out.println(message);
+        return inputReaderString();
+    }
+
+    private static int promptInt(String message) {
+        System.out.println(message);
+        return inputReaderInt();
+    }
 
     public static String inputReaderString() {
         try {
@@ -64,6 +63,4 @@ public class Main {
             throw new RuntimeException("Wrong input integer");
         }
     }
-
 }
-
