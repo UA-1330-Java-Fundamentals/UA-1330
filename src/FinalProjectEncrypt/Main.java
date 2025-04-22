@@ -12,12 +12,6 @@ public class Main {
         System.out.println("Please, enter the target operation (enc or dec): ");
         String targetOperation = inputReaderString();
 
-        System.out.println("Please, enter the message to process: ");
-        String message = inputReaderString();
-        if (message.isEmpty() && args.length > 2) {
-            message = args[2];
-        }
-
         System.out.println("Please, enter the int key (between 0...25): ");
         int key = inputReaderInt();
         if ((key < 0 || key > 25) && args.length > 1) {
